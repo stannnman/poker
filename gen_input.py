@@ -7,7 +7,7 @@ def read_hands(filename:str) -> list[str]:
 
 
 def main():
-    hands:List[str] = read_hands('input1.txt')
+    hands = read_hands('input1.txt')
   
     f = open('input2.txt', 'w', encoding='utf-8')
 
