@@ -1,0 +1,20 @@
+7S,2C,10C,QD,7H|5S,5D,5C,JD,JH # two of a kind|full house
+7S,2C,10C,2D,7H|5S,2C,5C,AD,5D # two pair|three of a kind
+7S,2C,10C,2D,7H|AC,2S,3C,4D,5H # two pair|straight
+4D,6D,9D,10D,AD|3H,4H,5H,6H,7H # flush|straight flush
+5S,2C,5C,AD,5D|8D,6C,3S,10S,KH # three of a kind|nothing
+AC,2S,3C,4D,5H|3H,4H,5H,6H,7H # straight|straight flush
+3H,4S,5C,6D,7H|7S,2C,10C,2D,7H # straight|two pair
+10C,JD,QS,KD,AH|5S,2C,5C,AD,5D # straight|three of a kind
+8S,8D,8C,8D,QH|7S,2C,10C,2D,7H # poker|two pair
+5S,5D,5C,JD,JH|5S,2C,5C,AD,5D # full house|three of a kind
+5S,2C,5C,AD,5D|4D,6D,9D,10D,AD # three of a kind|flush
+3H,4H,5H,6H,7H|10C,JD,QS,KD,AH # straight flush|straight
+8D,6C,3S,10S,KH|4D,6D,9D,10D,AD # nothing|flush
+5S,2C,5C,AD,5D|4D,6D,9D,10D,AD # three of a kind|flush
+5S,5D,5C,JD,JH|10C,JD,QS,KD,AH # full house|straight
+3H,4H,5H,6H,7H|AC,2S,3C,4D,5H # straight flush|straight
+3H,4S,5C,6D,7H|3H,4H,5H,6H,7H # straight|straight flush
+3H,4H,5H,6H,7H|8S,8D,8C,8D,QH # straight flush|poker
+7S,2C,10C,QD,7H|3H,4H,5H,6H,7H # two of a kind|straight flush
+3H,4S,5C,6D,7H|7S,2C,10C,2D,7H # straight|two pair

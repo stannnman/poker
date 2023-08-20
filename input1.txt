@@ -1,0 +1,11 @@
+8D,6C,3S,10S,KH # nothing
+7S,2C,10C,QD,7H # two of a kind
+7S,2C,10C,2D,7H # two pair
+5S,2C,5C,AD,5D # three of a kind 
+AC,2S,3C,4D,5H # straight
+3H,4S,5C,6D,7H # straight
+10C,JD,QS,KD,AH # straight
+4D,6D,9D,10D,AD # flush
+5S,5D,5C,JD,JH # full house
+8S,8D,8C,8D,QH # poker
+3H,4H,5H,6H,7H # straight flush
