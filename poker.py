@@ -18,19 +18,33 @@ hand_values = [
 
 
 def read_games(filename:str) -> list[str]:
+    '''
+    Read all games from input file
+    A game is two hands of five cards each
+    '''
     with open(filename, encoding='utf-8') as f:
         return [x.strip() for x in f]
 
 
 def get_cards(hand:str) -> list[Card]:
+    '''
+    Extract a list of cards from a comma-delimited string
+    '''
     return [Card(h[:-1], h[-1]) for h in hand.split(',')]
 
 
 def sort_cards(cards:list[Card]) -> list[Card]:
+    '''
+    Sort the list of cards in ascending order
+    '''
     return sorted(cards, key=lambda x: card_nums.index(x.num))
 
 
 def get_hand_value(cards:list[Card]) -> str:
+    '''
+    Determine the value of a poker hand
+    E.g. 'poker', 'flush', 'straight'
+    '''
     nums_counter = Counter([card.num for card in cards])
     suits_counter = Counter([card.suit for card in cards])
 
@@ -53,8 +67,8 @@ def get_hand_value(cards:list[Card]) -> str:
         else:
             return 'two of a kind'
 
-    # If no pairs or greater, then a straight has highest = lowest + 4
-    # Allow for exception case where hand is A2345
+    # If no pairs or greater, then a straight has highest card = lowest + 4
+    # Allow for exception case where hand is 2345A
     straight = ''.join(c.num for c in cards) == '2345A' \
         or card_nums.index(cards[4].num) - card_nums.index(cards[0].num) == 4
 
@@ -77,6 +91,9 @@ def get_hand_value(cards:list[Card]) -> str:
 
 
 def main():
+    '''
+    Main function
+    '''
     games = read_games('input2.txt')
 
     for game in games:
