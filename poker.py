@@ -53,11 +53,10 @@ def get_hand_value(cards:list[Card]) -> str:
         else:
             return 'two of a kind'
 
-    # Add an Ace at the start to allow a straight of A1234
-    card_nums_plus = ['A'] + card_nums
-
-    straight = card_nums_plus.index(cards[4].num) \
-        - card_nums_plus.index(cards[0].num) == 4
+    # If no pairs or greater, then a straight has highest = lowest + 4
+    # Allow for exception case where hand is A2345
+    straight = ''.join(c.num for c in cards) == '2345A' \
+        or card_nums.index(cards[4].num) - card_nums.index(cards[0].num) == 4
 
     flush = len(suits_counter) == 1
     
